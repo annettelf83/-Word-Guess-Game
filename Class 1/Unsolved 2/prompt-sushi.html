@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sushi Prompt - ALERTS, PROMPTS AND CONFIRMS</title>
+  </head>
+  <body>
+    
+    <script type="text/javascript">
+
+    // Write code here!
+    //We've already seen te alert. there are prompts and there are confirms.
+    //the three of them are very similar.
+    //PROMPT allows you to enter (write) information, and then you get the information the user enters 
+    //in your code.
+    //where would we put that informacion? In a var. 
+    //CONFIRM is actually to confirm. It allowes the user to confirm or not confirm, which is 
+    //going to be done with a boolean (TRUE OR FALSE) and allows you to put that output into 
+    //a variable as well. Let's see how that works.
+    //var name = prompt("what is your name");
+    //console.log(name);
+   // alert(name);
+   //alert("we rock"); --> this page says: we rock
+   //var soYouRock = confirm("the question is, do *you* rock?"); --> this page says: the questions is, do *you* rockk? will give you the option to say ok or cancel.
+   //var howMuchRock = prompt("how much do you rock?"); --> this page says: how much do you rock? opens a text bar to insert answer and then, ok or cancel.
+
+    //excercise sushi prompt.
+    //var sushiLike = confirm("Do you like sushi?");
+    //var sushiType = prompt("what kind of sushi do you like?");
+    //it seems that when I stored the answer in a variable, now the web recognizes it as true. 
+    //so, the alert for sushilike shows that is "true", and the alert for sushiType shows the user's anser "Dragon Roll"
+    //alert(sushiLike);
+    //alert(sushiType);
+    //if we want to concatenate 
+    //alert(sushiLike + sushiType);
+    //alert("I like "+sushiType); //for this alert to work, put quotes, but leave space after the last word and the las quote, then + then the variable. 
+    //console.log(sushiLike);
+    //console.log(sushiType);
+    //in javascript you can write information directly to the page. For that you can write
+    //var name = prompt("what is your name?"); 
+    //document.write("Hello! "+name+"</h1>"); //we can write just hello, or add an h1 (from html) and it will show the <h1> characteristics.
+    
+    //IF\ELSE STATEMENTS
+    //This is for, depending on what the input is, the algorithm will tell us what to do (if we want the stake
+    //rare, medium rare or well done, for example). Still the same algorithm, but it depends on the input. So it does something
+    //different based on the input. So, basically what we do in the code is we say: IF the user wants the meat rare, we coock it
+    //for 5 min; if the user wants the meat medium, we cook it for 10 min... otherwise, we cook it for 15 min (else).
+    //Step 1 - get the meat
+    //Step 2 - ask the user what term they want the meat to be
+    //step 3 - if medium, cook the meat cook the meat for 5 min\ if rare for 10\ else for 15 min
+    // in programing there's a structure to do that. In this case the structure is the statements If\Else
+    //it says: this code, right here, is going to be executed only if 'this' is true. And that's what booleans 
+    //are for. If 'this' is false, the code (or that part of the code) is not going to be executed.
+    //Now, time to see how that works:
+    //var likeStake = confirm("Do you like Stake?");
+    //if(likeStake) //syntax: if statement, parenthesis, an expression within those()-in this case the variable-, and then a block with {}. 
+    //{
+      //var stakeTerm=prompt("what term?");//the way it works is: the browser will evaluate this expression (var), which has to return a boolean 
+      //value(t or f). if the result of this expression is true, it will execute whatever code we put inside here. If it's not true, it will not execute it.
+   // } //THIS ONE DIDN'T WORK... because I put ; after if's expression. 
+
+   //So now, using the same example
+    var likeStake = confirm("Do you like Stake?");
+    if(likeStake === true) //we can do it as in the previous example, or we can compare it to the value of the variable with true.
+    //so we can say: after the var expression we write 3 equals operators, and we say IF the value of likeStake is equal to true. 
+    //Is another operator that what it does is to take the elements from the left and compares it to the element on the right, and if
+    //they're equals it will tell us True, if they're not equals it will tell us False. This uses something called 
+    //"coercion" used to change the type of value. From boolean to string, to number...and viceversa.
+    {
+      //Now, if it's not true, then I want to execute something else, i use ELSE. 
+      alert("Here's your stake sandwish")
+    } 
+   //if the condition above is not true, we want to display something else.
+    else
+    {
+      alert("here's a Well-Done Stake");
+    }
+// it can also be done as:
+//var age=pompt("What's your age");
+//if(age>21)
+//{
+    //alert("Here's your drink!");
+ //}
+ //else if (age < 21)
+ //{
+ //   alert("no drink for you"); But the problem with this is not in the syntax, but in the logic. As soon as an user
+      //says it's 21, it will give you a bug, because there's a problem with the logic. The logic to forget what happens if
+      //the user is actually 21.
+      //If you're 21 still won't get a drink, so if you say you're older than 20, might work... or, even better say >= 21.
+      //Like in the example below.
+ //}
+ //as a crazy example, assuming that the user is very stupid, and instead of entering a number writes "cat", 
+ //what the program will do? Will it crash, or do nothing? Well, cat is a text 20 is a number, we are comparing a
+ //text with a number, so is the text grater than the number? Cat is not a number, so, No... it's not greater than 20.
+ //so it will show the else alert (false).  
+    var birthYear =prompt("What year were you born");
+
+    if (2019-birthYear>=21) //if in 2019 your brithday makes over 21, you can drink, but not drive.
+    {
+      document.write("<br>don't drink and drive! <a href=https://www.uber.com/us/en/ride/>get an Uber!</a>"
+    );
+    }
+    else //but if your 2019 birthday makes you less than 21, no drinks for you. 
+    {
+      document.write("<br>no drinks for you!"); 
+    }
+
+    console.log(likeStake);
+    console.log(birthYear);
+    
+    
+    </script>
+    <a href="https://bootcampspot.com/sessions/578530/videos/47963">Link to the class</a>
+  </body>
+</html>

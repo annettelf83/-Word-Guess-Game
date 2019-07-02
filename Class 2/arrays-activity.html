@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Array Activity - Unsolved</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script type="text/javascript">
+
+      // Fill in the question marks with what the output will be.
+      var animals = ["parrot", "cat", "dog"];
+
+      // 3 will show the number, quantity of elements in the array.
+      console.log(animals.length);
+
+      // cat
+      console.log(animals[1]);
+
+      // dog
+      console.log(animals[2]);
+
+      // parrot
+      console.log(animals[0]);
+
+      /* Undefined ? Because length of the array is 3. And this is saying:
+      Animals in the position -whatever this value is- in this case 3, but there's no such thing 
+      as 3 in here,  only 2 (because it starts at 0). This is out of the baunderies of the array.
+      So that's why it's undefined.
+      */
+      console.log(animals[animals.length]); /* What's inside the [] is an expresion, and we can also 
+      put in there 3+3. So this is going to evaluate that expression and then take the  result and 
+      use it as the index. It doesn't have to be a number. Can be an expression that has a result that's a number. 
+      */
+
+      // dog ?
+      /*This one is an expression: left side and right side, operator. It's going to do an expression
+      between those. In this case, substraction, so it's going to substract to the left item, whatever's
+      on the right. animals.lenght (lenght is a property) is 3, -1=2, and in the position 2 is dog. 
+      */
+      console.log(animals[animals.length - 1]);
+
+      /*-1 ? This one is saying: what is the index of -in this case- bear. animals is an array and
+      .indexOf is a method. Method can be understood as a bunch of code that can be executed and give 
+      something back and has an argument. The argument is what goes inside (). So, if it has () is a
+      method, if it doesn't have (), is a property. 
+      Arrays also have methods, and one of them is the .indexOf, which takes 1 argument (whatever value
+      you want to pass) and it's going to RETURN what's the index of that elemnt in that array. 
+      Is going to tell you what's the position of "bear", but since is not in the array, it will 
+      give you -1. Basically if .indexOf is negative, means that element does not belong in the array. 
+      .indexOf must always gove you a number, those are the requirements of that method. When it gives
+      you a possitive number, means the element exists. 
+      */ 
+      console.log(animals.indexOf("bear"));
+
+      // 0
+      console.log(animals.indexOf("parrot"));
+      /*
+      Arrays, as said before, has other methods and other properties as well. .lenght and .indexOf are 
+      some of the most common ones that we will use. Method means that it belongs to a variable. 
+      */
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!--tells browser the document is an HTML file-->
+<!DOCTYPE html>
+<!--tells browser the document is in English-->
+<html lang="en">
+    <!--<head></head> tells browser information such as JS scripts, stylesheets, styles, title, and other information that doesn't show up in browser body-->
+<head>
+    <!--tells browser the type of characters to display are UTF8(unicode)-->
+  <meta charset="UTF-8">
+  <!--tells browser the title to display in the tab that displays the page-->
+  <title>Document</title>
+  <!--links the CSS of the document-->
+  <link rel="stylesheet" href="style.css">
+  <!--ends HTML header-->
+</head>
+<!--document body-->
+<body>
+  <!--links javascript file to the page. The joys of JavaScript-->
+  <p>June 17th <br>
+    first, code dissection (this code here)<br>
+    What's JavaScript? <br>
+    JavaScript is a programming language. We already know a webpage has HTML and CSS
+    But they only give you visuals: structure, content, and design, with no functionality.<br>
+    JavaScript is a programming language used by the browser to allow you to add functionality 
+    to your page.<br>
+    Functionality means Interaction between the user and the page; reacting and responding to
+    users Interactions with your page.<br>
+
+  <br>VARIABLES</br>
+
+  <br>Analogy of the egg: <br>
+  to boil an egg we have to do some steps.<br>
+  The egg itself is the INPUT. Input is basically what you give. The initial information 
+  given to the program in order to work.<br>
+  If its a programm that boils an egg, that program needs an egg. <br>
+  So, on step 1 we don't use the egg up to 3 or 4 steps after.<br>
+  But you needed the egg and you had to have the egg somewhere. that somewhere is 
+  what we call Variables. <br>
+  Variables allows us to store information (container) that we want to use afterwards.<br>
+  Like puting an egg in a bag, until the water boils and we do the other steps, and then 
+  we pick the egg from that bag (container) and we finally use it. And we are the ones 
+  who decide and create how many variables i need or what information we're going to be 
+  putting in my variable. <br>
+  the way to DECLARE variables on JS is var myVariable; <br>
+  Variables are the nouns of programming.<br>
+  Variables can contain: numbers, strings and booleans. These are what we call VALUES. <br>
+  The 3 first PRIMITIVE values that we will use are:<br>
+    . var name = "Snow White"; (strings, which means text)<br>
+    . var dwarfCount = 7; (numbers -0,1,2,3-)<br>
+    . var isSleeping = true; (booleans -true or false-)<br>
+Note: Concepts is what matters the most in any language. Almost any program uses
+variables and they have the same use and the same functionality. The only thing that 
+changes is the syntax.<br>
+   Variables can hold any kind of value (but there's no such thing as "anything" in programming)
+  theres only a predefined set of possible TYPES of values, as we saw above (primitive values).<br> 
+  We are using DATA of one of those TYPES.<br>
+  Variables are composed by a Name, and then we can STORE values in those variables. <br>
+  From the moment we establish the var, the browser knows (or javascript knows) that 
+  whenever we say e.g. "name", we want to get whatever we stored there.<br>
+  So if we say get the egg form the bag, we knoe the bag (var) is what contains the egg
+  e.g. var bag = "egg";<br>
+  Writing styes are called conventions, these are for example, using a capital letter to 
+  denote the second word on a variable, like: eggBag, myName, etc. This standard naming 
+  convention is called CamelCase. Theres also PascalCase: UpperCaseChar.<br>
+  If later on we want to change the value that that varianle is storing, you just have 
+  write the name = and asing the new value. <br>
+  So, the syntax structure is: var keyword (var), the variable name "princess", the assignment
+  (=) which is also an operator; assignes what's on the right to what's on the left.<br>
+  the value ("Snow White") and termination (;). When useing strings must use quotations. <br>
+  Errors in progam occur weather as a syntax error or logical errors: the eggs instead
+  of coming out boiled is coming out fried.<br>
+  JavaScript, same as in CSS, we have 3 ways of incorporating it in out page.<br>
+  2- Script tag: whatever we put inside there, the browser is going to treat it as 
+  javascript code.<br>
+  From now on, when we talk about programming, you always have to think like this: <br>
+  step 1, step 2, step 3... and so on. What are the steps to make sure it always 
+  does the same, and trying to draw a picture in your mind, because now is not longer
+  the visualization of the page that goes in the actual outputting, and then, you can 
+  write it down, but still, you must have these steps very clear before writing any code. <br>
+  programing is nothing but translating instructions to a language that a computer can 
+  comprehend.(see down to empiric class)
+
+  </p>
+
+  <script type="text/javascript">
+  //var myName and assign your name to that variable
+  var myName = "Annette"; //now, if I want my algorithm to show whatever my name is, instead of 
+  //passing the text "Hello world" I have to pass the value of the myName variable. And to pass
+  //the value of the myName variable, you simply pass the mane of the variable
+//before doing any variables we'll do an alert
+    alert(myName); //this is a string (changed Hello world with myName)
+    //what's the algorithm for  this? that algorithm gives the same output given the same input.
+    //Input that uses to open the page, output: there's an alert that says, hello world.
+    //and this is how we must think about this.
+    //Here, basically, we're telling the computer: "chrome, display an alert with this text."
+    //Now, let's create a variable on top of the alert: (check up)
+    //Now we want to show a second alert. But now we want to show a different name. In order to do that, we must change
+    //the value of the variable. But the variable has been already declared, we don't have to use var from now on. If 
+    //want to change the name of that variable we use the name equals the new value.
+    myName = "john";
+    //So this is the idea with variables.
+    alert(myName);
+    //ACTIVITY #3 (Pizza Variables)
+  </script>
+
+  
+</body>
+
+</html>
