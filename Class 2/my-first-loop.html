@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Looping Through Arrays</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+//THE FOR LOOP
+ 
+    // Creating an array of vegetables.
+      var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+ // Looping through each item in the array and logging a message to the console.
+      for (var i = 0; i < vegetables.length; i++) //var i is 0, and lower than var vegetables quantity (which is 3), 
+      { 
+        console.log("I love " + vegetables[i]);//the block of code says String + i*i?, then it makes an operation with i++.
+  //this will add the "I love"  to the variable vegetables and loop it through its array. 
+      }
+//Professor explination: this loop integrates 3 things that we did with the previous one.
+//In the syntax of the loop it asks you to declare an iterator. It asks you to define a condition,
+// and it asks you to perform an operation into the iterator. 
+//i++ is the same as doing i=i+1;. That's just a shotrhand to add 1 to the element to the left. 
+//you can also do i-- i=i-1;. if i=i+2 is also i+=2.
+//a for loop is also a loop
+
+//1-set up the index of the loop:
+var i = 1;
+//2-check the condition
+for (var i = 1; i < 10; 
+//3- make sure you are incrementing the index (inside the loop, but at the end of it)
+i++) 
+//Block of Code (body of the loop)
+{
+  const element = array[index]; //do stuff
+}
+//The first time we hit this loop will create a variable called i, set it equal to 1, then will check if 
+//is less than 10 (it is), we will jump into the loop, it will execute all the lines in the body of the loop.
+//When we close the curly brace it will increment the index, check the condition again and will keep on looping 
+//that condition is no longer true.
+//the great thing about this is that is really readable, you don't have to go outside the loop to find the index 
+//being set up, nor you have to scan inside the loop for the increment to know it's in the right place. 
+//it's a very clear and straight forward way of setting up a loop.
+
+//ITERATION 
+
+    </script>
+    <a href="https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0641ab70-5d4d-49e7-afda-aa7200069c24">Link to class video</a>
+  </body>
+</html>

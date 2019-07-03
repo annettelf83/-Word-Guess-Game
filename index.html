@@ -27,15 +27,23 @@
       }
       else
       {
+        opportunities=opportunities-1;
+        $("#Guess").html(opportunities);
          alert("You loose!");
          losses=losses+1;
          $("#Looser").html(losses);
       }
+      
+     
        })
+
+
     var wins = 0;
 
-
-    var losses = 0;
+    var i =0;
+    var losses= 0;
+    var opportunities =9;
+    
 
 </script>
 </head>
@@ -48,7 +56,7 @@
             <p>Wins:<span id="Winner">2</span></p>
             <p>losses:<span id="Looser">1</span></p>
             <p>Guesses left:<span id="Guess">9</span></p>
-            <p>Your guesses so far:</p>
+            <p>Your guesses so far:<span id="Guesses">0</p>
 
     </body>
 

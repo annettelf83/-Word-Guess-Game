@@ -31,7 +31,7 @@
   //if i were to put .length it will show how many characters are in the text. .indexOf will give 
   //the possition of the letter in the text. Strings also have .toLowerCase()
 
-    console.log("First statement");
+    /*console.log("First statement");
     console.log(drinks[0].toLowerCase());
     console.log(drinks[1]);
     console.log(drinks[2]);
@@ -51,7 +51,7 @@
     RESET is to hack the browser. Every browser defines their own style. What we do with reset is writing different styles
     Is nothing but styles you define that become the general style of the oage. 
     forking in github. It means cloning the repo, but is a new repo. It wont' affect the new version.
-    
+
     */
   
 
@@ -59,7 +59,7 @@
     // Then modify each element of the array (individually) to make them lowercase
    
 
-    console.log("Second statement");
+    /*console.log("Second statement");
     console.log(drinks[0]);
     console.log(drinks[1]);
     console.log(drinks[2]);
@@ -71,7 +71,39 @@
     console.log("Water".toLowerCase());
     console.log("Orange Juice".toLowerCase());*/
 
-    </script>
+    //do this and check the console.
+    var count=0; //first: the declararion of the variable. We're having a variable that's going to be the one that 
+    //we will use as an index (which is called an iterator). Basically that's the ctrl variable. That's the one
+    //that's going to tell you what I'm supposed to do. 
 
+    while(count<10){//second: we have a condition. The condition is that the count is lower than ten. The reserved word 'while', and then a block of code{}
+      console.log(count); //third: what does it do? I declare my variable, then I'm saying: "while this condition (count<10) is true, execute this block of code." Then it's going to check if the condition's true. If yes, it will 
+      //execute this. Then check again "is the condition true?", executes this... check again.
+      count=count+1; //why do we say count=count+1;? What would happen if we don't do this? It's going to log an infinit LOOP.
+      //In programming when we say loop means code that's repeated while certain condition is met. In this case, if
+      //we don't do something to the variable (iterator, ctrl variable or however we want to name it), that condition is 
+      //always going to be true, because the variable never changes. So this is going to run infinitely in the browser.
+      //that's going to cause what's known as Stack(memory) Overflow(you have more things than it can hold) in your browser.
+    } 
+    // For a loop to work the way we want -and we use loops to execute certain code a certain amount of times, 
+    //or while certain condition is met-, we need: 
+    //1- An Iterator (ctrl variable, ctrl condition)
+    //2- A condition
+    //3- We need to perform some operation to that variable. (this one is the one that stops the loop)
+    //So the condition gets updated, so it will get to a point where no longer is true, so that loop will end. 
+    
+
+    //there's another type of loop, that is different from this one. In this one we are responsible for 
+    //defining the iterator, the coondition and what we do with the click.
+    //So, the syntax of the loop doesn't force you to do that in any way. The type of loop that we will be 
+    //studing today is: 
+    //THE FOOR LOOP.
+
+
+
+
+
+    </script>
+<a href="https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0641ab70-5d4d-49e7-afda-aa7200069c24">Link to class video</a>
   </body>
 </html>
