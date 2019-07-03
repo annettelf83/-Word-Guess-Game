@@ -28,10 +28,16 @@
       else
       {
         opportunities=opportunities-1;
-        $("#Guess").html(opportunities);
-         alert("You loose!");
+        if(opportunities===0){
+            alert("You loose!");
          losses=losses+1;
          $("#Looser").html(losses);
+        }
+        else{
+           alert("You missed a chance!");
+        }
+        $("#Guess").html(opportunities);
+         
       }
       
      
