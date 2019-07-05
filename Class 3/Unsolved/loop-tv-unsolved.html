@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      // declaring variables 
+      var favTVshows = [];
+      var tvShow;
+
+      // For Loop Elements Repeats 3 Times. what loops do is iterations. the first one is what is going to happen with the iteration.//when are we going to stop the iteration, is the second one. and the last one is what's going to happen to the iteration with the variable.
+      for (var i = 1; i < 4; i++) { //line at i<4 is going to stop the iteration and the other one is going to increase it by 1.
+      
+        // prompt window asking questions below, then adding by 1, so iterates 3 times the different questions.
+        tvShow = prompt("What's your #" + i + " favorite TV show?");//we are asigning to TV shows the variable we declared at the top, and is going to be equal to whatever the user enters to the prompt.
+
+        // using the method push. by using it we are adding to the tv show, and whatever stored on tvShow for each iteration. this is adding what the user enters to the variable declared on the top. Is going to be stored in the memory. the second time we run whatever tvshow we choose is going to add, so we're gonna have two items on the array: show 1, show 2, and that's it. 
+        favTVshows.push(tvShow);// push() adds new items to the end of an array, and returns the new length. Changes the lenght of the array. To add items at the begginig og the array, we use the unshift() method.
+      }
+
+      // for loop of the tv shows entered?
+      for (var j = 0; j < favTVshows.length; j++) { //
+
+        // alert showing what I entered
+        alert(favTVshows[j]);
+      }
+
+    </script>
+
+  </body>
+</html>

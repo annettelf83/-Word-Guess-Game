@@ -7,7 +7,8 @@
   <body>
 
     <h1>Open the console to see the magic!</h1>
-
+     <p>Timer</p>
+     
     <script>
      //In this exercise we will use the method .toLowerCase(), which is not for arrays
      //is for strings.The java string toLowerCase() 
@@ -17,7 +18,7 @@
      //the default locale.
     // Create an Array of Drinks with all capital letters
     // ...
-    var drinks = ["Coke", "Pepsi", "Water", "Orange Juice"];
+    //var drinks = ["Coke", "Pepsi", "Water", "Orange Juice"];
 
     //we learned that for arrays we have the .indexOf method so:
     //var index=drinks.indexOf("Coke");
@@ -65,26 +66,26 @@
     console.log(drinks[2]);
     console.log(drinks[3]);
     var lcDrinks=drinks.toLowerCase();
-
+every time I want my code to stop running, i should use the if-else condition. First put it in a variable. 
     /*console.log("Coke".toLowerCase());
     console.log("Pepsi".toLowerCase());
     console.log("Water".toLowerCase());
     console.log("Orange Juice".toLowerCase());*/
 
     //do this and check the console.
-    var count=0; //first: the declararion of the variable. We're having a variable that's going to be the one that 
+    //var count=0; //first: the declararion of the variable. We're having a variable that's going to be the one that 
     //we will use as an index (which is called an iterator). Basically that's the ctrl variable. That's the one
     //that's going to tell you what I'm supposed to do. 
 
-    while(count<10){//second: we have a condition. The condition is that the count is lower than ten. The reserved word 'while', and then a block of code{}
-      console.log(count); //third: what does it do? I declare my variable, then I'm saying: "while this condition (count<10) is true, execute this block of code." Then it's going to check if the condition's true. If yes, it will 
+    //while(count<10){//second: we have a condition. The condition is that the count is lower than ten. The reserved word 'while', and then a block of code{}
+      //console.log(count); //third: what does it do? I declare my variable, then I'm saying: "while this condition (count<10) is true, execute this block of code." Then it's going to check if the condition's true. If yes, it will 
       //execute this. Then check again "is the condition true?", executes this... check again.
-      count=count+1; //why do we say count=count+1;? What would happen if we don't do this? It's going to log an infinit LOOP.
+      //count=count+1; //why do we say count=count+1;? What would happen if we don't do this? It's going to log an infinit LOOP.
       //In programming when we say loop means code that's repeated while certain condition is met. In this case, if
       //we don't do something to the variable (iterator, ctrl variable or however we want to name it), that condition is 
       //always going to be true, because the variable never changes. So this is going to run infinitely in the browser.
       //that's going to cause what's known as Stack(memory) Overflow(you have more things than it can hold) in your browser.
-    } 
+    //} 
     // For a loop to work the way we want -and we use loops to execute certain code a certain amount of times, 
     //or while certain condition is met-, we need: 
     //1- An Iterator (ctrl variable, ctrl condition)
@@ -98,7 +99,10 @@
     //So, the syntax of the loop doesn't force you to do that in any way. The type of loop that we will be 
     //studing today is: 
     //THE FOOR LOOP.
-
+    
+    var exampleTimer=setTimeOut(function){
+      alert("1 second passed");
+    },1000 /*miliseconds to wait*/
 
 
 

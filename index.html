@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GUESS WORD GAME</title>
+    <title>PSYCHIC GAME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -19,24 +19,29 @@
     {
       console.log(event.key)
 
-      if(letterGuess===event.key)
-      {
+      if(letterGuess===event.key){
           alert("You Win!");
           wins=wins+1;
           $("#Winner").html(wins);
       }
-      else
-      {
+      else{
         opportunities=opportunities-1;
+        if(losses===0){
+         guesses=guesses+1;
+         $("#Guesses").html(guesses);
+        }
+
         if(opportunities===0){
             alert("You loose!");
          losses=losses+1;
          $("#Looser").html(losses);
         }
+       
         else{
            alert("You missed a chance!");
         }
         $("#Guess").html(opportunities);
+    
          
       }
       
@@ -45,10 +50,9 @@
 
 
     var wins = 0;
-
-    var i =0;
     var losses= 0;
     var opportunities =9;
+    var guesses =0;
     
 
 </script>
@@ -56,8 +60,8 @@
 
     <body>
        
-            <h1>Psychic Game</h1>
-            <h2>Guess what letter I'm thinking of</h2>
+            <h1><u><b>PSYCHIC GAME</b></u></h1>
+            <h2>Guess what letter I'm thinking of:</h2>
 
             <p>Wins:<span id="Winner">2</span></p>
             <p>losses:<span id="Looser">1</span></p>
